@@ -32,8 +32,8 @@ public class VendedorService {
 		return vendedorOptional.get();
 	}
 
-	public Vendedor alterar(Vendedor vendedor) throws VendedorException {
-		Vendedor _vendedor = buscar(vendedor.getMatricula());
+	public Vendedor alterar(Vendedor vendedor, Long matricula) throws VendedorException {
+		Vendedor _vendedor = buscar(matricula);
 
 		_vendedor.setNome(vendedor.getNome());
 
@@ -44,7 +44,6 @@ public class VendedorService {
 		Vendedor _vendedor = buscar(matricula);
 
 		vendedorRepository.delete(_vendedor);
-
 	}
 
 }

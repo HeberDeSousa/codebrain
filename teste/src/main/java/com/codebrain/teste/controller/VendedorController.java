@@ -39,7 +39,7 @@ public class VendedorController {
 	public ResponseEntity<Object> alterar(@RequestBody Vendedor vendedor, @PathVariable Long matricula) {
 
 		try {
-			Vendedor _vendedor = vendedorService.alterar(vendedor);
+			Vendedor _vendedor = vendedorService.alterar(vendedor, matricula);
 			return ResponseEntity.status(HttpStatus.OK).body(_vendedor);
 		} catch (VendedorException e) {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
