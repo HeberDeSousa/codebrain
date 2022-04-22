@@ -44,3 +44,6 @@ server.port=8081
 ```
 
 will serve the application at http://localhost:8081
+
+# API Documentation
+Once the project is run, API documentation should be under http://localhost:8080/swagger-ui.html
