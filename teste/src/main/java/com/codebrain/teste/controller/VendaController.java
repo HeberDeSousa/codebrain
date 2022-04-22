@@ -5,6 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.codebrain.teste.exception.VendaException;
@@ -12,6 +13,7 @@ import com.codebrain.teste.model.Venda;
 import com.codebrain.teste.service.VendaService;
 
 @RestController
+@RequestMapping("/venda")
 public class VendaController {
 	
 	@Autowired
