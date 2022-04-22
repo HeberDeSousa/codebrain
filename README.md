@@ -1,5 +1,5 @@
 ### Teste Codebrain Backend
-This is an HTTP-based word counter in Java.
+This is a simple sales API in Java.
 
 here's how to run a Spring Boot Application
 
@@ -45,5 +45,5 @@ server.port=8081
 
 will serve the application at http://localhost:8081
 
-# API Documentation
+## API Documentation
 Once the project is run, API documentation should be under http://localhost:8080/swagger-ui.html
