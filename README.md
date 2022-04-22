@@ -47,3 +47,62 @@ will serve the application at http://localhost:8081
 
 ## API Documentation
 Once the project is run, API documentation should be under http://localhost:8080/swagger-ui.html
+
+# API Call Examples
+## Create Product
+
+POST localhost:8080/produto/
+{
+  "id": 1,
+  "nome": "Produto",
+  "preco": 10.0
+}
+
+## Update Product
+POST localhost:8080/produto/1
+{
+  "id": 1,
+  "nome": "Prod",
+  "preco": 5.0
+}
+
+## Delete Product
+DELETE localhost:8080/produto/1
+
+## List Seller by Sales Quantity
+GET localhost:8080/ranking/quantidadeVenda
+
+## Create Sale
+POST localhost:8080/venda/
+{
+  "id": 0,
+  "produtos": [
+    {
+      "id": 1
+    }
+  ],
+  "valorTotal": 100,
+  "vendedor": {
+    "matricula": 1
+  }
+}
+
+## Create Seller
+POST localhost:8080/vendedor/
+{
+  "matricula": 1,
+  "nome": "João"
+}
+
+## Get Seller
+GET localhost:8080/vendedor/1
+
+## Update Seller
+PUT localhost:8080/vendedor/1
+{
+  "matricula": 1,
+  "nome": "Pedro"
+}
+
+## Delete Seller
+DELETE localhost:8080/vendedor/1
