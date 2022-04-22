@@ -61,7 +61,7 @@ POST localhost:8080/produto/
 ```
 
 ## Update Product
-POST localhost:8080/produto/1
+PUT localhost:8080/produto/1
 ```
 {
   "id": 1,
